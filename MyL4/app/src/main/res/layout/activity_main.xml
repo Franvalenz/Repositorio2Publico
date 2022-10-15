@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="20dp"
+    tools:context=".MainActivity">
+
+    
+
+   <ImageView
+       android:id="@+id/iconGoogle"
+       android:layout_width="50dp"
+       android:layout_height="50dp"
+       android:src="@drawable/google45x45"
+       android:layout_centerHorizontal="true" />
+
+    <TextView
+        android:id="@+id/txtGoogle"
+        android:layout_below="@id/iconGoogle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:text="Ingresa con Google"
+        style="@style/TextAppearance.MaterialComponents.Body1" />
+    <!--Google SignInButton: Click to begin Google Sign-->
+    <com.google.android.gms.common.SignInButton
+        android:id="@+id/btnGoogle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true" />
+
+
+</RelativeLayout>
